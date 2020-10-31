@@ -1,0 +1,5399 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=1440, maximum-scale=1.0"/>
+    
+        <link rel="shortcut icon" href="./img/favicon.png"/>
+    
+    
+        <style>
+@font-face {
+                            font-family: "EuropaGroSHOP-Reg";
+                            src: url('../fonts/Europa Regular.otf') format("opentype");
+                        }
+
+@font-face {
+                            font-family: "Europa-Bold";
+                            src: url('../fonts/Europa-Bold.otf') format("opentype");
+                        }
+
+@font-face {
+                            font-family: "EuropaGroSHOP-Lig";
+                            src: url('../fonts/Europa Light.otf') format("opentype");
+                        }
+.anima-component-wrapper a,
+.anima-screen a {
+    text-decoration: none;
+    display: contents;
+}
+
+
+
+.anima-full-width-a {
+    width: 100%;
+}
+
+.anima-full-height-a {
+    height: 100%;
+}
+
+.anima-screen textarea:focus,
+.anima-screen input:focus {
+    outline: none;
+}
+
+.anima-screen *,
+.anima-component-wrapper *{
+    box-sizing: border-box;
+}
+
+.anima-screen div {
+    -webkit-text-size-adjust: none;
+}
+
+.anima-container-center-vertical,
+.anima-container-center-horizontal {
+    pointer-events: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.anima-container-center-vertical {
+    align-items: center;
+    height: 100%;
+}
+
+.anima-container-center-horizontal {
+    justify-content: center;
+    width: 100%;
+}
+
+.anima-container-center-vertical > *,
+.anima-container-center-horizontal > * {
+    pointer-events: auto;
+    flex-shrink: 0;
+}
+
+.anima-component-wrapper,
+.anima-screen {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    word-break: break-word;
+}
+
+.anima-auto-animated div {
+    opacity: 0;
+    position: absolute;
+    --anima-z-index: -1;
+}
+
+.anima-auto-animated .anima-container-center-vertical,
+.anima-auto-animated .anima-container-center-horizontal {
+    opacity: 1;
+}
+
+.anima-overlay {
+position: absolute;
+opacity: 0;
+display: none;
+top: 0;
+width: 100%;
+height: 100%;
+position: fixed;
+}
+
+.anima-animate-appear {
+    opacity: 0;
+    display: block;
+    animation: anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+
+.anima-animate-disappear {
+    opacity: 1;
+    display: block;
+    animation: anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+
+.anima-animate-nodelay {
+    animation-delay: 0s;
+}
+
+@keyframes anima-reveal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.align-self-flex-start {
+    align-self: flex-start;
+}
+.align-self-flex-end {
+    align-self: flex-end;
+}
+.align-self-flex-center {
+    align-self: center;
+}
+.anima-valign-text-middle {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+.anima-valign-text-bottom {
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+}
+.anima-component-wrapper,
+.anima-component-wrapper * {
+    pointer-events: none;
+}
+
+.anima-component-wrapper a *,
+.anima-component-wrapper a,
+.anima-component-wrapper input,
+.anima-component-wrapper video,
+.anima-component-wrapper iframe,
+.anima-listeners-active,
+.anima-listeners-active * {
+    pointer-events: auto;
+}
+
+.anima-hidden,
+.anima-hidden * {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.anima-smart-layers-pointers,
+.anima-smart-layers-pointers * {
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.anima-component-wrapper.anima-not-ready,
+.anima-component-wrapper.anima-not-ready * {
+    visibility: hidden !important;
+}
+
+.anima-listeners-active-click,
+.anima-listeners-active-click * {
+    cursor: pointer;
+}
+
+/* screen - wivo */
+
+.border-class-1 {
+  border: 1px solid var(--mountain-mist);
+}
+.font-class-1 {
+  font-family: "Europa-Bold", Helvetica, Arial, serif;
+}
+.font-class-2 {
+  color: var(--white);
+  font-family: "EuropaGroSHOP-Reg", Helvetica, Arial, serif;
+  font-size: 24px;
+  letter-spacing: 1.60px;
+  line-height: 29px;
+}
+.font-class-3 {
+  color: var(--black);
+  font-family: "Europa-Bold", Helvetica, Arial, serif;
+  font-size: 53px;
+  letter-spacing: 1.08px;
+  line-height: 90px;
+}
+.font-class-4 {
+  color: var(--black);
+  font-family: "Europa-Bold", Helvetica, Arial, serif;
+  font-size: 16px;
+  letter-spacing: 0.33px;
+  line-height: 90px;
+}
+.font-class-5 {
+  color: var(--black);
+  font-family: "EuropaGroSHOP-Lig", Helvetica, Arial, serif;
+  font-size: 13px;
+  letter-spacing: 0.27px;
+  line-height: 30px;
+}
+.wivo {
+  background-color: rgba(248,247,247,1.0);
+  height: 5146px;
+  overflow: hidden;
+  position: relative;
+  width: 1440px;
+}
+.wivo .about-C61RwL {
+  background-color: transparent;
+  color: var(--black);
+  font-size: 24px;
+  height: auto;
+  left: 1274px;
+  line-height: 32px;
+  position: absolute;
+  text-align: right;
+  top: 4800px;
+  white-space: nowrap;
+  width: auto;
+}
+.wivo .about-iZjIT4 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-left: 59px;
+  min-height: 24px;
+  min-width: 81px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: auto;
+}
+.wivo .beauty-C61RwL {
+  background-color: transparent;
+  color: var(--white);
+  font-family: "EuropaGroSHOP-Reg", Helvetica, Arial, serif;
+  font-size: 36px;
+  height: auto;
+  left: 41px;
+  letter-spacing: 3.80px;
+  line-height: 43px;
+  position: absolute;
+  text-align: left;
+  top: 353px;
+  white-space: nowrap;
+  width: auto;
+}
+.wivo .beautywithwivo-C61RwL {
+  background-color: transparent;
+  height: auto;
+  left: 387px;
+  position: absolute;
+  text-align: center;
+  top: 4157px;
+  white-space: nowrap;
+  width: 665px;
+}
+.wivo .bitmap-2P4qUJ {
+  background-color: transparent;
+  height: 65px;
+  left: 500px;
+  position: absolute;
+  top: 5019px;
+  width: 440px;
+}
+.wivo .bitmap-C61RwL {
+  background-color: transparent;
+  height: 45px;
+  left: 283px;
+  position: absolute;
+  top: 769px;
+  width: 200px;
+}
+.wivo .bitmap-QxM5SU {
+  background-color: transparent;
+  height: 116px;
+  left: 661px;
+  position: absolute;
+  top: 4026px;
+  width: 121px;
+}
+.wivo .bitmap-VMr6Om {
+  background-color: transparent;
+  height: 117px;
+  left: 774px;
+  position: absolute;
+  top: 733px;
+  width: 84px;
+}
+.wivo .bitmap-mzXdH9 {
+  background-color: transparent;
+  height: 62px;
+  left: 1149px;
+  position: absolute;
+  top: 761px;
+  width: 202px;
+}
+.wivo .bitmap-uSjsby {
+  background-color: transparent;
+  height: 692px;
+  left: -139px;
+  position: absolute;
+  top: -77px;
+  width: 461px;
+}
+.wivo .book-iZjIT4 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-left: 63px;
+  min-height: 24px;
+  min-width: 72px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: auto;
+}
+.wivo .book-now-NOXmfT {
+  background-color: transparent;
+  color: var(--black);
+  flex-shrink: 0;
+  font-size: 30px;
+  height: auto;
+  line-height: 39px;
+  min-height: 39px;
+  min-width: 150px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.wivo .combined-shape-C61RwL {
+  background-color: transparent;
+  height: 44px;
+  left: 1191px;
+  position: absolute;
+  top: 3109px;
+  width: 86px;
+}
+.wivo .consulation-01-C61RwL {
+  background-color: transparent;
+  height: 762px;
+  left: 41px;
+  position: absolute;
+  top: 2369px;
+  width: 658px;
+}
+.wivo .consulation-C61RwL {
+  background-color: transparent;
+  color: var(--black);
+  font-size: 55px;
+  height: auto;
+  left: 499px;
+  line-height: 72px;
+  position: absolute;
+  text-align: right;
+  top: 2693px;
+  white-space: nowrap;
+  width: 613px;
+}
+.wivo .dolor-sit-amet-cons-RxtVdg {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 22px;
+  margin-bottom: -68px;
+  min-height: 22px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 370px;
+}
+.wivo .dolor-sit-amet-cons-pxQmTo {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 22px;
+  margin-bottom: -68px;
+  min-height: 22px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 370px;
+}
+.wivo .dolor-sit-amet-cons-rcgOZJ {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 22px;
+  margin-bottom: -68px;
+  min-height: 22px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 370px;
+}
+.wivo .email-C61RwL {
+  background-color: transparent;
+  color: var(--black);
+  font-family: "EuropaGroSHOP-Reg", Helvetica, Arial, serif;
+  font-size: 20px;
+  height: auto;
+  left: 74px;
+  letter-spacing: 2.00px;
+  line-height: 24px;
+  position: absolute;
+  text-align: left;
+  top: 4914px;
+  white-space: nowrap;
+  width: auto;
+}
+.wivo .facebook-C61RwL {
+  background-color: transparent;
+  height: 17px;
+  left: 1388px;
+  position: absolute;
+  top: 348px;
+  width: 9px;
+}
+.wivo .get-started-with-our-C61RwL {
+  background-color: transparent;
+  color: var(--white);
+  font-family: "EuropaGroSHOP-Reg", Helvetica, Arial, serif;
+  font-size: 12px;
+  height: auto;
+  left: 238px;
+  letter-spacing: 0.52px;
+  line-height: 22px;
+  position: absolute;
+  text-align: left;
+  top: 704px;
+  width: 388px;
+}
+.wivo .group-10-WQXeF1 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 24px;
+  min-height: 352px;
+  position: relative;
+  width: 375px;
+}
+.wivo .group-11-WQXeF1 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 24px;
+  min-height: 352px;
+  position: relative;
+  width: 376px;
+}
+.wivo .group-12-WQXeF1 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  min-height: 352px;
+  position: relative;
+  width: 375px;
+}
+.wivo .group-13-C61RwL {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  height: 352px;
+  justify-content: flex-start;
+  left: 133px;
+  min-width: 1174px;
+  position: absolute;
+  top: 3561px;
+  width: auto;
+}
+.wivo .group-14-C61RwL {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  height: 352px;
+  justify-content: flex-start;
+  left: 2px;
+  min-width: 1436px;
+  position: absolute;
+  top: 4289px;
+  width: auto;
+}
+.wivo .group-3-C61RwL {
+  background-color: transparent;
+  height: 105px;
+  left: 1386px;
+  position: absolute;
+  top: 348px;
+  width: 14px;
+}
+.wivo .group-4-iZjIT4 {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  min-height: 28px;
+  position: relative;
+  width: 98px;
+}
+.wivo .group-5-C61RwL {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  height: 28px;
+  justify-content: flex-start;
+  left: 821px;
+  min-width: 540px;
+  position: absolute;
+  top: 66px;
+  width: auto;
+}
+.wivo .group-7-copy-2-Ngo5aa {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  margin-top: 21px;
+  min-height: 82px;
+  position: relative;
+  width: 370px;
+}
+.wivo .group-7-copy-fSpzM4 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  margin-top: 21px;
+  min-height: 82px;
+  position: relative;
+  width: 370px;
+}
+.wivo .group-7-nfbLIN {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  margin-top: 21px;
+  min-height: 82px;
+  position: relative;
+  width: 370px;
+}
+.wivo .group-C61RwL {
+  align-items: center;
+  background-color: var(--white);
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  height: 69px;
+  justify-content: flex-end;
+  left: 49px;
+  min-width: 371px;
+  padding: 0 114px;
+  position: absolute;
+  top: 568px;
+  width: auto;
+}
+.wivo .in-home-aesthetic-C61RwL {
+  background-color: transparent;
+  height: auto;
+  left: 156px;
+  position: absolute;
+  text-align: center;
+  top: 943px;
+  width: 1127px;
+}
+.wivo .in-home-aesthetic-se-C61RwL {
+  background-color: transparent;
+  color: var(--white);
+  font-family: "EuropaGroSHOP-Lig", Helvetica, Arial, serif;
+  font-size: 14px;
+  height: auto;
+  left: 41px;
+  letter-spacing: 12.70px;
+  line-height: 39.2px;
+  position: absolute;
+  text-align: left;
+  top: 513px;
+  white-space: nowrap;
+  width: auto;
+}
+.wivo .instagram-C61RwL {
+  background-color: transparent;
+  height: 14px;
+  left: 1386px;
+  position: absolute;
+  top: 438px;
+  width: 14px;
+}
+.wivo .instagram2-C61RwL {
+  background-color: transparent;
+  height: 94px;
+  left: 816px;
+  position: absolute;
+  top: 3939px;
+  width: 94px;
+}
+.wivo .legal-C61RwL {
+  background-color: transparent;
+  color: var(--black);
+  font-size: 24px;
+  height: auto;
+  left: 1282px;
+  line-height: 32px;
+  position: absolute;
+  text-align: right;
+  top: 4887px;
+  white-space: nowrap;
+  width: auto;
+}
+.wivo .line-3-5FNhjl {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 4px;
+  margin-right: 7.0px;
+  margin-top: 0px;
+  position: relative;
+  width: 25px;
+}
+.wivo .line-5-C61RwL {
+  background-color: transparent;
+  height: 5px;
+  left: 71px;
+  position: absolute;
+  top: 4953px;
+  width: 337px;
+}
+.wivo .line-C61RwL {
+  background-color: transparent;
+  height: 62px;
+  left: 212px;
+  position: absolute;
+  top: 711px;
+  width: 1px;
+}
+.wivo .lorem-ipsum-dolor-si-C61RwL {
+  background-color: transparent;
+  color: rgba(117,117,117,1.0);
+  font-family: "EuropaGroSHOP-Reg", Helvetica, Arial, serif;
+  font-size: 21px;
+  height: auto;
+  left: 686px;
+  letter-spacing: 0.00px;
+  line-height: 30px;
+  position: absolute;
+  text-align: right;
+  top: 2779px;
+  width: 426px;
+}
+.wivo .lorem-ipsum-dolor-si-RxtVdg {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 52px;
+  margin-top: 8px;
+  min-height: 52px;
+  position: relative;
+  text-align: left;
+  width: 370px;
+}
+.wivo .lorem-ipsum-dolor-si-pxQmTo {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 52px;
+  margin-top: 8px;
+  min-height: 52px;
+  position: relative;
+  text-align: left;
+  width: 370px;
+}
+.wivo .lorem-ipsum-dolor-si-rcgOZJ {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 52px;
+  margin-top: 8px;
+  min-height: 52px;
+  position: relative;
+  text-align: left;
+  width: 370px;
+}
+.wivo .most-popular-C61RwL {
+  background-color: transparent;
+  color: var(--black);
+  font-size: 16px;
+  height: auto;
+  left: 455px;
+  line-height: 22px;
+  position: absolute;
+  text-align: center;
+  top: 1267px;
+  white-space: nowrap;
+  width: 487px;
+}
+.wivo .oval-C61RwL {
+  background-color: transparent;
+  height: 920px;
+  left: -60px;
+  position: absolute;
+  top: 0px;
+  width: 1560px;
+}
+.wivo .path-3-C61RwL {
+  background-color: transparent;
+  height: 8px;
+  left: 257px;
+  position: absolute;
+  top: 763px;
+  width: 6px;
+}
+.wivo .path-3-VMr6Om {
+  background-color: transparent;
+  height: 8px;
+  left: 238px;
+  opacity: 0.2;
+  position: absolute;
+  top: 763px;
+  width: 6px;
+}
+.wivo .path-u5LkAN {
+  background-color: transparent;
+  height: 40px;
+  left: 27px;
+  position: absolute;
+  top: 27px;
+  width: 40px;
+}
+.wivo .press-C61RwL {
+  background-color: transparent;
+  color: var(--black);
+  font-size: 24px;
+  height: auto;
+  left: 1283px;
+  line-height: 32px;
+  position: absolute;
+  text-align: right;
+  top: 4931px;
+  white-space: nowrap;
+  width: auto;
+}
+.wivo .rectangle-2-copy-C61RwL {
+  background-color: var(--iron);
+  height: 477px;
+  left: 1124px;
+  overflow: hidden;
+  position: absolute;
+  top: 2270px;
+  width: 260px;
+}
+.wivo .rectangle-3-nfbLIN {
+  background-color: var(--iron);
+  border: 1px solid var(--mountain-mist);
+  flex-shrink: 0;
+  height: 249px;
+  position: relative;
+  width: 375px;
+}
+.wivo .rectangle-AX7pWk {
+  background-color: var(--iron);
+  flex-shrink: 0;
+  height: 352px;
+  position: relative;
+  width: 359px;
+}
+.wivo .rectangle-C61RwL {
+  background-color: var(--white);
+  height: 1433px;
+  left: 25px;
+  position: absolute;
+  top: 772px;
+  width: 1390px;
+}
+.wivo .rectangle-VMr6Om {
+  background-color: transparent;
+  height: 394px;
+  left: 104px;
+  position: absolute;
+  top: 644px;
+  width: 1485px;
+}
+.wivo .rectangle-copy-10-AX7pWk {
+  background-color: var(--iron);
+  flex-shrink: 0;
+  height: 352px;
+  margin-left: 0px;
+  position: relative;
+  width: 359px;
+}
+.wivo .rectangle-copy-11-AX7pWk {
+  background-color: var(--iron);
+  flex-shrink: 0;
+  height: 352px;
+  margin-left: 0px;
+  position: relative;
+  width: 359px;
+}
+.wivo .rectangle-copy-6-Ngo5aa {
+  background-color: var(--iron);
+  border: 1px solid var(--mountain-mist);
+  flex-shrink: 0;
+  height: 249px;
+  position: relative;
+  width: 375px;
+}
+.wivo .rectangle-copy-7-fSpzM4 {
+  background-color: var(--iron);
+  border: 1px solid var(--mountain-mist);
+  flex-shrink: 0;
+  height: 249px;
+  position: relative;
+  width: 376px;
+}
+.wivo .rectangle-copy-8-C61RwL {
+  background-color: var(--white);
+  height: 2077px;
+  left: 25px;
+  position: absolute;
+  top: 3267px;
+  width: 1390px;
+}
+.wivo .rectangle-copy-9-AX7pWk {
+  background-color: var(--iron);
+  flex-shrink: 0;
+  height: 352px;
+  margin-left: 0px;
+  position: relative;
+  width: 359px;
+}
+.wivo .rectangle-mzXdH9 {
+  background-color: rgba(247,247,247,1.0);
+  height: 806px;
+  left: 41px;
+  position: absolute;
+  top: 2461px;
+  width: 1343px;
+}
+.wivo .rectangle-uSjsby {
+  background-color: var(--iron);
+  border: 0.9px solid var(--mountain-mist);
+  height: 477px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 260px;
+}
+.wivo .right-to-you-C61RwL {
+  background-color: transparent;
+  color: var(--white);
+  font-size: 116px;
+  height: auto;
+  left: 33px;
+  line-height: 152px;
+  position: absolute;
+  text-align: left;
+  top: 367px;
+  white-space: nowrap;
+  width: auto;
+}
+.wivo .service-1-C61RwL {
+  background-color: transparent;
+  color: var(--black);
+  font-size: 35px;
+  height: auto;
+  left: 108px;
+  line-height: 46px;
+  position: absolute;
+  text-align: center;
+  top: 1837px;
+  white-space: nowrap;
+  width: 348px;
+}
+.wivo .service-1-VMr6Om {
+  background-color: transparent;
+  height: 500px;
+  left: 90px;
+  position: absolute;
+  top: 1350px;
+  width: 317px;
+}
+.wivo .service-2-C61RwL {
+  background-color: transparent;
+  color: var(--black);
+  font-size: 35px;
+  height: auto;
+  left: 459px;
+  line-height: 46px;
+  position: absolute;
+  text-align: center;
+  top: 2080px;
+  width: 522px;
+}
+.wivo .service-2-VMr6Om {
+  background-color: transparent;
+  height: 650px;
+  left: 514px;
+  position: absolute;
+  top: 1349px;
+  width: 412px;
+}
+.wivo .service-3-C61RwL {
+  background-color: transparent;
+  color: var(--black);
+  font-size: 35px;
+  height: auto;
+  left: 1002px;
+  line-height: 46px;
+  position: absolute;
+  text-align: center;
+  top: 1837px;
+  white-space: nowrap;
+  width: 348px;
+}
+.wivo .service-3-VMr6Om {
+  background-color: transparent;
+  height: 500px;
+  left: 1052px;
+  position: absolute;
+  top: 1350px;
+  width: 317px;
+}
+.wivo .services-5FNhjl {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-bottom: -5px;
+  margin-left: 1.6px;
+  min-height: 24px;
+  min-width: 112px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: auto;
+}
+.wivo .services-C61RwL {
+  background-color: transparent;
+  color: var(--black);
+  font-size: 24px;
+  height: auto;
+  left: 1245px;
+  line-height: 32px;
+  position: absolute;
+  text-align: right;
+  top: 4844px;
+  white-space: nowrap;
+  width: auto;
+}
+.wivo .shape-u5LkAN {
+  background-color: transparent;
+  height: 93px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 93px;
+}
+.wivo .sign-in-iZjIT4 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-left: 66px;
+  min-height: 24px;
+  min-width: 134px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: auto;
+}
+.wivo .sign-up-and-join-C61RwL {
+  background-color: transparent;
+  color: var(--black);
+  font-size: 24px;
+  height: auto;
+  left: 74px;
+  line-height: 32px;
+  position: absolute;
+  text-align: left;
+  top: 4822px;
+  white-space: nowrap;
+  width: auto;
+}
+.wivo .start-now-C61RwL {
+  background-color: transparent;
+  color: var(--black);
+  font-size: 41px;
+  height: auto;
+  left: 455px;
+  line-height: 54px;
+  position: absolute;
+  text-align: center;
+  top: 1206px;
+  white-space: nowrap;
+  width: 487px;
+}
+.wivo .start-with-a-free-C61RwL {
+  background-color: transparent;
+  color: var(--black);
+  font-size: 55px;
+  height: auto;
+  left: 590px;
+  line-height: 72px;
+  position: absolute;
+  text-align: right;
+  top: 2615px;
+  white-space: nowrap;
+  width: 522px;
+}
+.wivo .subscribe-C61RwL {
+  background-color: transparent;
+  color: var(--black);
+  font-family: "EuropaGroSHOP-Reg", Helvetica, Arial, serif;
+  font-size: 20px;
+  height: auto;
+  left: 288px;
+  letter-spacing: 2.00px;
+  line-height: 24px;
+  position: absolute;
+  text-align: left;
+  top: 4914px;
+  white-space: nowrap;
+  width: auto;
+}
+.wivo .twitter-C61RwL {
+  background-color: transparent;
+  height: 11px;
+  left: 1386px;
+  position: absolute;
+  top: 395px;
+  width: 14px;
+}
+.wivo .whatu2019-s-new-C61RwL {
+  background-color: transparent;
+  height: auto;
+  left: 534px;
+  position: absolute;
+  text-align: center;
+  top: 3380px;
+  white-space: nowrap;
+  width: 371px;
+}
+.wivo .wivo-C61RwL {
+  background-color: transparent;
+  height: 43px;
+  left: 56px;
+  position: absolute;
+  top: 60px;
+  width: 158px;
+}
+.wivo .wivo-copy-2-C61RwL {
+  background-color: transparent;
+  color: var(--black);
+  font-size: 71px;
+  height: auto;
+  left: 749px;
+  line-height: 93px;
+  position: absolute;
+  text-align: left;
+  top: 4858px;
+  white-space: nowrap;
+  width: auto;
+}
+.wivo .wivo-copy-C61RwL {
+  background-color: transparent;
+  color: var(--black);
+  font-size: 71px;
+  height: auto;
+  left: 625px;
+  line-height: 93px;
+  position: absolute;
+  text-align: left;
+  top: 4723px;
+  white-space: nowrap;
+  width: auto;
+}
+:root {
+  --black: rgba(0,0,0,1.0);
+  --iron: rgba(215,215,215,1.0);
+  --mountain-mist: rgba(150,150,150,1.0);
+  --white: rgba(255,255,255,1.0);
+}</style>
+    
+    
+    
+    <meta name="author" content="AnimaApp.com - Design to code, Automated.">
+</head>
+<body style="margin: 0;background: rgba(248,247,247,1.0);">
+<input type="hidden" id="anPageName" name="page" value="wivo"/>
+
+    <div class="anima-container-center-horizontal">
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="wivo anima-screen " 
+
+>
+    
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="rectangle-C61RwL" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="oval-C61RwL" 
+
+ 
+src="./wivo-oval-9439E4CC-195A-4DAB-90E9-6BA13E7A86E6.jpg"
+/>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="rectangle-VMr6Om" 
+
+ 
+src="./wivo-rectangle-8895524E-5EE8-4006-94AE-E59CCB64C13C.png"
+/>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="bitmap-C61RwL" 
+
+ 
+src="./wivo-bitmap-72D6852D-7E9B-4CEC-8510-DC6ECEB1C692@2x.png"
+/>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="bitmap-VMr6Om" 
+
+ 
+src="./wivo-bitmap-0932F3C1-B1BB-49C2-936C-FC82EFB95999@2x.png"
+/>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="bitmap-mzXdH9" 
+
+ 
+src="./wivo-bitmap-50F814C9-2C8F-4DEA-8862-0B06D07CA181@2x.png"
+/>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="right-to-you-C61RwL font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Right to you
+    
+</div>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="wivo-C61RwL" 
+
+ 
+src="./wivo-wivo-B9A67595-6973-4F1C-9607-07111CE814E5.svg"
+/>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="wivo-copy-2-C61RwL font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        WIVO
+    
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="rectangle-copy-8-C61RwL" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="in-home-aesthetic-C61RwL font-class-3" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        IN-HOME AESTHETIC &amp; BEAUTY SERVICES BY THE TOP PROFESSIONALS.
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="whatu2019-s-new-C61RwL font-class-3" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        WHAT’S NEW
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="beautywithwivo-C61RwL font-class-3" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        #BEAUTYWITHWIVO
+    
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="group-14-C61RwL" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="rectangle-AX7pWk border-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="rectangle-copy-9-AX7pWk border-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="rectangle-copy-10-AX7pWk border-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="rectangle-copy-11-AX7pWk border-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="wivo-copy-C61RwL font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        WIVO
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="sign-up-and-join-C61RwL font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        SIGN UP AND JOIN
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="email-C61RwL" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        EMAIL
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="subscribe-C61RwL" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        SUBSCRIBE
+    
+</div>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="line-5-C61RwL" 
+
+ 
+src="./wivo-line-5-29615BE3-619C-47AE-9D24-E0E169440C60.png"
+/>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="about-C61RwL font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ABOUT
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="services-C61RwL font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        SERVICES
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="legal-C61RwL font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        LEGAL
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="press-C61RwL font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        PRESS
+    
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="group-13-C61RwL" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="group-12-WQXeF1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="rectangle-3-nfbLIN" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="group-7-nfbLIN" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="dolor-sit-amet-cons-RxtVdg anima-valign-text-middle font-class-4" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        DOLOR SIT AMET, CONSE
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="lorem-ipsum-dolor-si-RxtVdg anima-valign-text-bottom font-class-5" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend ullamcorper nunc id rhoncus. Pellentesque eget leo ac odio maximus ornare. Lorem ipsum dolor sit amet, consectetur
+    
+</div>
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="group-11-WQXeF1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="rectangle-copy-7-fSpzM4" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="group-7-copy-fSpzM4" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="dolor-sit-amet-cons-rcgOZJ anima-valign-text-middle font-class-4" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        DOLOR SIT AMET, CONSE
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="lorem-ipsum-dolor-si-rcgOZJ anima-valign-text-bottom font-class-5" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend ullamcorper nunc id rhoncus. Pellentesque eget leo ac odio maximus ornare. Lorem ipsum dolor sit amet, consectetur
+    
+</div>
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="group-10-WQXeF1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="rectangle-copy-6-Ngo5aa" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="group-7-copy-2-Ngo5aa" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="dolor-sit-amet-cons-pxQmTo anima-valign-text-middle font-class-4" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        DOLOR SIT AMET, CONSE
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="lorem-ipsum-dolor-si-pxQmTo anima-valign-text-bottom font-class-5" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend ullamcorper nunc id rhoncus. Pellentesque eget leo ac odio maximus ornare. Lorem ipsum dolor sit amet, consectetur
+    
+</div>
+</div>
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="instagram2-C61RwL" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+><img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="shape-u5LkAN" 
+
+ 
+src="./wivo-shape-80B6B313-6F7A-4951-949C-AD65FC24F2E1@2x.png"
+/>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="path-u5LkAN" 
+
+ 
+src="./wivo-path-316F9747-7566-49CF-8BAF-E8D4ED32E84C@2x.png"
+/>
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="service-3-C61RwL font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        SERVICE 3
+    
+</div>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="bitmap-QxM5SU" 
+
+ 
+src="./wivo-bitmap-EE27B314-72B6-469B-82CE-8C287F996922@2x.png"
+/>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="start-now-C61RwL font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        START NOW
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="most-popular-C61RwL font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        MOST POPULAR
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="service-2-C61RwL font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        SERVICE 2
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="service-1-C61RwL font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        SERVICE 1
+    
+</div>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="service-3-VMr6Om" 
+
+ 
+src="./wivo-service-3-B025868F-23E5-4E1E-979A-5022BFC58574.png"
+/>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="service-2-VMr6Om" 
+
+ 
+src="./wivo-service-2-277635AA-D9C6-4ACB-BC14-3C9E9F967CB0.png"
+/>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="service-1-VMr6Om" 
+
+ 
+src="./wivo-service-1-F5C1D0B6-8885-4564-8E24-5D8CC418F6AE.png"
+/>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="rectangle-mzXdH9" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="consulation-01-C61RwL" 
+
+ 
+src="./wivo-consulation-01-971E1EE1-7F91-488E-84C7-DA2985709A34.png"
+/>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="rectangle-2-copy-C61RwL" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="rectangle-uSjsby" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="bitmap-uSjsby" 
+
+ 
+src="./wivo-bitmap-03F2A7B7-9042-4A06-B89F-A716A84AD03D.jpg"
+/>
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="start-with-a-free-C61RwL font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        START WITH A FREE
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="consulation-C61RwL font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        CONSULATION
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="lorem-ipsum-dolor-si-C61RwL" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend ullamcorper nunc id rhoncus. Pellentesque eget leo ac odio maximus ornare. Lorem ipsum dolor sit amet, consectetur
+    
+</div>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="combined-shape-C61RwL" 
+
+ 
+src="./wivo-combined-shape-5BCA36C4-B811-44B6-AD09-48B3DB8C3350@2x.png"
+/>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="beauty-C61RwL" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Beauty
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="in-home-aesthetic-se-C61RwL" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        IN HOME AESTHETIC SERVICES
+    
+</div>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="twitter-C61RwL" 
+
+ 
+src="./wivo-twitter-908709D3-99C9-4B7D-88E1-B2898617B859.svg"
+/>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="instagram-C61RwL" 
+
+ 
+src="./wivo-instagram-E0D3FF60-E763-4349-9FF4-14DCD3C3C9E7.svg"
+/>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="facebook-C61RwL" 
+
+ 
+src="./wivo-facebook-9A97F215-6EF1-456E-9489-5D99C7C1B17B.svg"
+/>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="group-5-C61RwL" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="group-4-iZjIT4" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="services-5FNhjl font-class-2" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Services
+    
+</div>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="line-3-5FNhjl" 
+
+ 
+src="./wivo-line-3-039D95CA-2347-4ECB-9AD3-2FE001C5A7F5@2x.png"
+/>
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="about-iZjIT4 font-class-2" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        About
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="sign-in-iZjIT4 font-class-2" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Sign in&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="book-iZjIT4 font-class-2" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Book
+    
+</div>
+</div>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="line-C61RwL" 
+
+ 
+src="./wivo-line-55A84792-20F7-4378-A663-97E8B2413514@2x.png"
+/>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="group-C61RwL" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="book-now-NOXmfT font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Book Now
+    
+</div>
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="get-started-with-our-C61RwL" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Get started with our<br/>virtual booking service and recieve 15% of your first order
+    
+</div>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="path-3-C61RwL" 
+
+ 
+src="./wivo-path-3-AD17C77D-CB3C-4CF2-B9AF-4D01C37B1878@2x.png"
+/>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="path-3-VMr6Om" 
+
+ 
+src="./wivo-path-3-CEA2C6DB-03AE-4DE6-B0E4-E51B7A55F564@2x.png"
+/>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="group-3-C61RwL" 
+
+ 
+src="./wivo-group-3-A07754F7-77A4-4652-B619-2969BDEAAA27.svg"
+/>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="bitmap-2P4qUJ" 
+
+ 
+src="./wivo-bitmap-9384978D-0C1A-42A2-B2F7-5A35C88F0639.png"
+/>
+
+ </div>
+    </div>
+    
+    <!-- V 6c1852e Wed Oct 28 16:35:06 UTC 2020 -->
+</body>
+</html>

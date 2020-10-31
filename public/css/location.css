@@ -1,0 +1,271 @@
+
+.font-class-1l {
+  font-family: 'Poppins', Helvetica, Arial, serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.43px;
+  /* line-height: 16px; */
+}
+.location {
+  background-color: rgba(248,247,247,1.0);
+  height: 815px;
+  overflow: hidden;
+  position: relative;
+  width: 1440px;
+}
+.location .address-C61RwL {
+  background-color: transparent;
+  color: var(--cape-cod);
+  font-family: 'Poppins', Helvetica, Arial, serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 644px;
+  letter-spacing: 1.52px;
+  line-height: 53px;
+  position: absolute;
+  text-align: left;
+  top: 283px;
+  white-space: nowrap;
+  width: auto;
+}
+.location .booked-with-wivo-bef-C61RwL {
+  background-color: transparent;
+  color: var(--cape-cod);
+  font-family: 'Arial', Helvetica, Arial, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 534px;
+  letter-spacing: 0.87px;
+  line-height: 23px;
+  position: absolute;
+  text-align: left;
+  top: 120px;
+  white-space: nowrap;
+  width: auto;
+}
+.location .enter-your-address-b-C61RwL {
+  background-color: transparent;
+  color: var(--cape-cod);
+  height: auto;
+  left: 573px;
+  position: absolute;
+  text-align: left;
+  top: 345px;
+  white-space: nowrap;
+  width: auto;
+}
+.location .find-your-service-NOXmfT {
+  background-color: transparent;
+  color: var(--white);
+  font-family: 'Poppins', Helvetica, Arial, serif;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 52px;
+  letter-spacing: 0.91px;
+  line-height: 31px;
+  position: absolute;
+  text-align: left;
+  top: 15px;
+  white-space: nowrap;
+  width: auto;
+}
+.location .group-2-copy-2-hvAGCq {
+  background-color: var(--black);
+  border-radius: 20px;
+  height: 40px;
+  left: 309px;
+  position: absolute;
+  top: 0px;
+  width: 129px;
+}
+.location .group-2-copy-3-hvAGCq {
+  background-color: var(--black);
+  border-radius: 20px;
+  height: 40px;
+  left: 464px;
+  position: absolute;
+  top: 0px;
+  width: 129px;
+}
+.location .group-2-copy-hvAGCq {
+  background-color: var(--black);
+  border-radius: 20px;
+  height: 40px;
+  left: 155px;
+  position: absolute;
+  top: 0px;
+  width: 129px;
+}
+.location .group-2-hvAGCq {
+  background-color: var(--black);
+  border-radius: 20px;
+  height: 40px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 129px;
+}
+.location .group-3-C61RwL {
+  background-color: transparent;
+  height: 40px;
+  left: 424px;
+  position: absolute;
+  top: 675px;
+  width: 593px;
+}
+.location .group-C61RwL {
+  background-color: var(--black);
+  height: 58px;
+  left: 574px;
+  position: absolute;
+  top: 475px;
+  width: 297px;
+}
+.location .line-2-C61RwL {
+  background-color: transparent;
+  height: 2px;
+  left: 571px;
+  position: absolute;
+  top: 449px;
+  width: 298px;
+}
+.location .line-C61RwL {
+  background-color: transparent;
+  height: 11px;
+  left: -4px;
+  position: absolute;
+  top: 88px;
+  width: 1449px;
+}
+.location .location-1-Wrn4qO {
+  background-color: transparent;
+  color: var(--white);
+  height: auto;
+  left: 34px;
+  position: absolute;
+  text-align: left;
+  top: 13px;
+  white-space: nowrap;
+  width: 61px;
+}
+.location .location-1-XOCfyZ {
+  background-color: transparent;
+  color: var(--white);
+  height: auto;
+  left: 34px;
+  position: absolute;
+  text-align: left;
+  top: 13px;
+  white-space: nowrap;
+  width: 61px;
+}
+.location .location-1-o2ezxL {
+  background-color: transparent;
+  color: var(--white);
+  height: auto;
+  left: 34px;
+  position: absolute;
+  text-align: left;
+  top: 13px;
+  white-space: nowrap;
+  width: 61px;
+}
+.location .location-1-tFxJzc {
+  background-color: transparent;
+  color: var(--white);
+  height: auto;
+  left: 34px;
+  position: absolute;
+  text-align: left;
+  top: 13px;
+  white-space: nowrap;
+  width: 61px;
+}
+.location .location-C61RwL {
+  background-color: transparent;
+  height: 18px;
+  left: 572px;
+  position: absolute;
+  top: 416px;
+  width: 14px;
+}
+.location .path-2-XnGp23 {
+  background-color: transparent;
+  height: 18px;
+  left: 1px;
+  position: absolute;
+  top: 0px;
+  width: 13px;
+}
+.location .rectangle-C61RwL {
+  background-color: rgba(248,247,247,1.0);
+  height: 815px;
+  left: 1px;
+  position: absolute;
+  top: 0px;
+  width: 1440px;
+}
+.location .rectangle-VMr6Om {
+  background-color: transparent;
+  height: 446px;
+  left: 352px;
+  position: absolute;
+  top: 189px;
+  width: 739px;
+}
+.location .search-your-address-C61RwL {
+  background-color: transparent;
+  color: var(--cape-cod);
+  font-family: 'Poppins', Helvetica, Arial, serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 594px;
+  letter-spacing: 0.61px;
+  line-height: 21px;
+  position: absolute;
+  text-align: left;
+  top: 419px;
+  white-space: nowrap;
+  width: 179px;
+}
+.location .sign-in-C61RwL {
+  text-decoration: none;
+  color: #000;
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Arial', Helvetica, Arial, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: 810px;
+  letter-spacing: 0.87px;
+  line-height: 23px;
+  position: absolute;
+  text-align: left;
+  top: 120px;
+  white-space: nowrap;
+  width: auto;
+}
+.location .wivo-C61RwL {
+  background-color: transparent;
+  height: 40px;
+  left: 646px;
+  position: absolute;
+  top: 34px;
+  width: 146px;
+}
+:root {
+  --black: rgba(0,0,0,1.0);
+  --cape-cod: rgba(67,67,67,1.0);
+  --white: rgba(255,255,255,1.0);
+}
